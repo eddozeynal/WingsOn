@@ -29,9 +29,6 @@ namespace WingsOn
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //services.AddScoped<IRepository<Person>, PersonRepository>();
-            //services.AddScoped<IRepository<Flight>, FlightRepository>();
-            //services.AddScoped<IRepository<Booking>, BookingRepository>();
             services.AddScoped< PersonRepository>();
             services.AddScoped< FlightRepository>();
             services.AddScoped< BookingRepository>();
